@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS CUSTOM -->
+   {% load static %}
+   <link rel="stylesheet" href="{% static 'css/design.css' %}">
+<title>Document</title>
+</head>
+<body>
+  
+<div class=" bg-hero-codecyan ">
+  <nav class="navbar navbar-expand-lg ">
+    
+  <div class="mx-md-0 mx-auto ">
+        <a class="navbar-brand  " href="{% url 'home' %}"></a> <img  src="{% static 'img/Logo.jpg' %}" class=" img "  height="120" width="150">
+        </a>
+  </div>
+
+      
+      <ul class="nav justify-content-center mx-md-0 mx-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link link-secondary" aria-current="page" href="{% url 'project' %}">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="{% url 'resume' %}">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="{% url 'contact' %}">Contact</a>
+        </li>
+       
+      </ul>
+    
+     
+  </nav>
+  
+    
+
+    <section class="mt-5 mb-5 mb-md-0">
+      <div class="container-xxl g-codecyan overflow-hidden">
+          <div class="row justify-content-between align-items-center gx-5 gy-5">
+              <div class="col-md-3">
+                  <div class="text-center text-md-start">
+                      <h1 class="display-1 fw-bold lh-base">Hi, I'm <span class="text-accent-codecyan">Paras
+                             MOdi </span>!
+                      </h1>
+                  </div>
+              </div>
+              <div class="col-md-6 ">
+                  <div class="anim-codecyan">
+                      <img class="w-100 img-fluid rounded-circle" src="{% static 'img/main.png' %}" alt="">
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class=" text-center text-md-end">
+                      <p class="fs-4">I am a full-stack developer and QEA-Automation Tester.<br />I build websites and Automate Test Scenario.</p>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
+
+  <section id="about" class="bg-white py-lg-1">
+    <div class="container-xxl g-codecyan overflow-hidden py-5">
+        <div class="row justify-content-around align-items-center gap-5 my-2">
+          
+            <div class="col-md-3 order-1 order-md-0">
+               
+                    <div class="col-12">
+                        <div class="bg-white px-2 py-2 rounded-5 border border-secondary">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div
+                                        class="d-flex justify-content-center align-items-center position-relative text-center">
+                                        <img src="{% static 'img/green-bg.png' %}" alt=""
+                                            class="w-75 rounded-circle img-fluid service-img-codecyan">
+                                        <div class="position-absolute fs-4 text-light">
+                                            <i class="bi bi-brush"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h3 class="fw-bold m-0">Web development</h>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-3 order-1 order-md-0">
+                    
+                        <div class=" px-2 py-2 rounded-5 border border-secondary">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div
+                                        class="d-flex justify-content-center align-items-center position-relative text-center">
+                                        <img src="{% static 'img/blue-bg.png' %}" alt=""
+                                            class="w-75 rounded-circle img-fluid service-img-codecyan">
+                                        <div class="position-absolute fs-4 text-light">
+                                            <i class="bi bi-code-square"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h3 class="fw-bold m-0">Automation</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               <div class="col-md-3 order-1 order-md-0">       
+                    
+                        <div class=" px-2 py-2 rounded-5 border  border-secondary">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div
+                                        class="d-flex justify-content-center align-items-center position-relative text-center">
+                                        <img src="{% static 'img/yellow-bg.png' %}" alt=""
+                                            class="w-75 rounded-circle img-fluid  service-img-codecyan">
+                                        <div class="position-absolute fs-4 ">
+                                          
+                                            <i class="bi bi-terminal"></i>
+                                       </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h3 class="fw-bold m-0">Custom Script</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            </div>
+
+      <div class="container">
+          <h4 class=" text-center fw-bold text-danger">Who am I?</h4>
+
+          <h1 class="display-2  fw-bold  ">About Me</h1>
+          
+          <div class="p-3 mb-2  bg-warning text-dark bg-opacity-25">
+            <p class="mt-5  fst-italic ">I am django web developer and automation tester.currently ,working n cognizant as a programmer trainee.
+                                I can design and develop webapps using bootstrap,html and django. I can also automate test scenarios using selenium(java).
+                                I love competitive programming.</p>
+             <p class="mt-1 lh-lg">Key skills- django ,selenium,craeting api(django restfullapi),api intregration,perfoming crud operation and authentication,sql/nosql,dbms,data structure & algorithms(c++).
+                                 Progamming language-c++,java,python</p>
+      </div>
+
+
+      </div>
+
+   </section>
+
+  <div class="container-xxl  ">
+            <div class="row justify-content-between gx-0 gy-5">
+                <div class="col-md-7">
+
+                    <h5 class="display-4 mt-5 fw-bold">Say hi on Insta <span
+                            class="text-danger text-decoration-underline"><a target="_blank" class="text-reset"
+                                href="#">@paras</a></span>
+                    </h5>
+                    <div class="ms-4"> <a  href="{% url 'payment' %}">Buy me a <i class="bi bi-cup-hot-fill"></i>  </a></div>
+                </div>
+                <div class="col-md-3 pt-7">
+                    <div class="fs-2 fw-bold">Adresss</div>
+                    <p class="mt-3 fs-5">Newtown,Kolkata,west bengal</p>
+
+
+                </div>
+
+
+
+<footer class="">
+
+
+   <div class="row justify-content-between container-fluid  bg-light border    ">
+    <div class="col-4 text-muted    ">
+       <img  src="{% static 'img/Logo.jpg' %}" class="img"  height="50" width="50">
+       <span>Copyright © 2022 ParasModi.com</span>
+    </div>
+
+    <div class="col-3 text-center my-auto">
+        Made with <i class="bi bi-heart-fill text-danger"></i> by Paras
+    </div>
+
+    <div class="col-3 text-muted my-auto ">
+
+        <a href="#" class="fa fa-linkedin float-end p-1"></a>
+        <a href="#" class="fa fa-facebook float-end p-1"></a>
+    </div>
+
+  </div>
+
+</footer>
+ 
+</body>
+</html>
